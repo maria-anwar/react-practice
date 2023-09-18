@@ -1,9 +1,7 @@
-import React from "react";
 import Profile from "../components/Profile";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-
 
 const UsersList = () => {
   //https://jsonplaceholder.typicode.com/photos
@@ -63,7 +61,6 @@ const UsersList = () => {
   //       ];
   return (
     <>
-    <h1 className="mt-2 font-light">HElo</h1>
       <section className="container">
         <h1>Users List</h1>
         <div className="d-flex border users-container row ">
