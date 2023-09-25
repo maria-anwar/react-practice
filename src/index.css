@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -71,3 +72,34 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital@0;1&display=swap');
+.body{
+  background-color: white;
+  margin: 0;
+  padding:0;
+  font-family: 'Volkhov', serif;
+}
+ ul::marker {
+  content: '';
+  display: inline-block;
+  width: 12px; /* Adjust the width as needed */
+  height: 12px; /* Adjust the height as needed */
+}
+.bg-home{ 
+  background: url('/src/assets/images/field1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  position: 'relative';
+  height: 766px;
+  /* position: fixed; */
+ 
+}
+.bg-footer{
+  background: url('/src/assets/images/ftvector.png');
+  object-fit: cover;
+  background-color: #268C76;
+  background-repeat: no-repeat;
+  /* display: flex;
+  justify-content: flex-end; */
+}
