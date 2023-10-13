@@ -7,7 +7,7 @@ const Testimonial = (props) => {
 
   return (
   <>
-    <div className="flex flex-col justify-between bg-white p-4 rounded-lg h-72 lg:w-1/3 md:lg:w-1/3 border">
+    <div className="flex flex-col justify-between bg-white p-4 rounded-lg h-72 md:w-1/3 lg:w-1/3 border">
               <p className="font-Source Sans Pro font-small text-md text-[#242424]">
                {props.desc}
               </p>

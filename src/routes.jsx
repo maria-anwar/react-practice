@@ -11,7 +11,10 @@ import TreesRisk from './components/TreesRisk';
 import ImageBackground from './components/Background';
 import Testimonial from './components/Testimonial';
 import BlockButton from './components/BlockButton';
-import ServiceCard from './components/Services';
+import ServiceCard from './components/Facilities';
+import TailDesign from './components/TailDesign';
+import Navbar from './components/Navbar';
+import MyGrids from './components/MyGrids';
 
 const AppRoutes = () => {
   return (
@@ -30,6 +33,10 @@ const AppRoutes = () => {
             <Route path="/testimonial" element={<Testimonial/>} /> 
             <Route path="/button" element={<BlockButton/>} />
             <Route path="/services" element={<ServiceCard/>} />
+            <Route path="/taildesign" element={<TailDesign/>} />
+            <Route path="/navbar" element={<Navbar/>} />
+            <Route path="/grid" element={<MyGrids/>} />
+
         </Routes>
     </BrowserRouter>
     </>

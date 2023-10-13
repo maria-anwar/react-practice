@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -102,4 +102,19 @@ button:focus-visible {
   background-repeat: no-repeat;
   /* display: flex;
   justify-content: flex-end; */
+}
+.bg-smvector{
+  background: url('/src/assets/images/fullvector.png');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: #268C76;
+  /* background-position-x: center;
+  background-position-y: center; */
+}
+.bg-lgvector{
+  background: url('/src/assets/images/fullvector.png');
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: right;
+  background-color: #268C76;
 }

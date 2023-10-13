@@ -1,22 +1,36 @@
-import React from 'react';
-import treelog from "../assets/images/treelog.png";
-import trees from "../assets/images/trees.png";
+// Navbar.js
 
-function mycomponent() {
-  // Determine the screen width
-  const screenWidth = window.innerWidth;
+import React, { useState, useEffect } from 'react';
+
+function MyComponent() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) { // Adjust the scroll threshold as needed
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
 
   return (
-    <div>
-      {screenWidth <= 375 ? (
-        
-        <img src={treelog} alt="Mobile Image" />
-      ) : (
-        
-        <img src={trees} alt="Desktop Image" />
-      )}
+    <div className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="logo">Logo</div>
+      <ul className="nav-links">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
     </div>
   );
 }
 
-export default mycomponent;
+export default MyComponent;

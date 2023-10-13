@@ -9,10 +9,10 @@ const KeyBenefit = (props) => {
               </div>
             </div>
             <div className="flex flex-col gap-4">
-              <h4 className="font-Volkhov text-[#242424] text-3xl font-bold lg:text-2xl">
+              <h4 className="font-volkhov text-[#242424] text-3xl font-bold pe-4 leading-normal lg:text-2xl">
                 {props.title}
               </h4>
-              <div className="font-Source Sans Pro font-small text-md text-[#242424]">
+              <div className="font-Source Sans Pro font-normal text-md text-[#242424] pe-4">
                 {props.desc}
               </div>
             </div>

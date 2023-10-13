@@ -3,17 +3,25 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      'sm': '375px',
-      // => @media (min-width: 576px) { ... }
+      'xxs': '375px',
+      'xs':  '42px',
 
-      'md': '780px',
-      // => @media (min-width: 960px) { 1366px... }
+      'sm': '640px', //confusion here
+      // => @media (min-width: 640px) { ... }
 
-      'lg': '1024px', //height of laptop is 667
-      // => @media (min-width: 1440px) { ... }
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      'xl': '1221px',
+      '2xl': '1536px',
+          
     },
     extend: {
-      
+      fontFamily:{
+        volkhov:['Volkhov', 'serif']
+      },
+     
     },
   },
   plugins: [],

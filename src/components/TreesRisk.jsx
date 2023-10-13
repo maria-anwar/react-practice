@@ -4,20 +4,19 @@ const TreesRisk = (props) => {
   return (
     <>
       
-        <div className="px-4 py-4 flex flex-col shadow-lg rounded-lg gap-8 text-black border lg:w-568">
+        <div className="py-4 px-4 flex flex-col shadow-lg rounded-lg  gap-8 sm:rounded-xl sm:shadow-xl lg:w-568 md:gap-4 sm:p-6 md:p-4 md:w-1/2 lg:p-6">
           <img
-            className="rounded-lg"
             src={props.imgUrl}
             alt="mess-tree"
-            height="272"
+            className="rounded-lg sm:rounded-xl"
           />
-          <div className="flex flex-col gap-3 items-start">
-            <h4 className="font-Volkhov text-3xl text-semibold text-black lg:text-4xl">
+          <div className="flex flex-col gap-3 sm:px-4 md:px-0">
+            <h4 className="font-volkhov font-semibold text-2xl text-[#242424] pe-8 md:text-2xl md:text-left md:pe-0 xl:text-3xl">
               {props.title}
             </h4>
             <ul
               role="list"
-              className="marker:text-slate-900 list-disc pl-4 space-y-3 text-black-500 text-lg"
+              className="marker:text-slate-900 list-disc pl-4 space-y-3 text-[#242424] font-normal text-medium"
             >
               <li>{props.point1}</li>
               <li>{props.point2}</li>
